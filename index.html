@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main class="confirm">
+      <div class="card1">
+        <div class="align">
+          <div class="bg1">
+            <img src="./images/card-logo.svg" alt="" />
+            <p id="shnumber">0000 0000 0000 0000</p>
+            <div class="flex">
+              <p id="shname">JANE APPLESEED</p>
+              <p><span id="shexpmm">00</span>/<span id="shexpyy">00</span></p>
+            </div>
+          </div>
+          <div class="bg2">
+            <p id="shcvc">000</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="confirm" class="card2">
+        <form action="">
+          <label for="name">CARDHOLDER NAME</label>
+          <input id="name" type="text" placeholder="e.g. Jane Appleseed" />
+          <p id="blankname" class="hide">Can't be blank</p>
+          <p id="wrongname" class="hide">Wrong format</p>
+          <label for="number">CARD NUMBER</label>
+          <input
+            id="number"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000" />
+          <p id="blanknumber" class="hide">Can't be blank</p>
+          <p id="wrongnumber" class="hide">Wrong format, numbers only</p>
+          <div class="grid">
+            <label for="expmm">EXP. DATE (MM/YY)</label>
+            <label for="cvc">CVC</label>
+            <div class="exp">
+              <input id="expmm" type="text" placeholder="MM" />
+              <input id="expyy" type="text" placeholder="YY" />
+              <p id="blankexp" class="hide">Can't be blank</p>
+              <p id="wrongexp" class="hide">Wrong format, numbers only</p>
+            </div>
+            <div class="cvvc">
+              <input id="cvc" type="text" placeholder="  e.g. 123" />
+              <p id="blankcvc" class="hide">Can't be blank</p>
+              <p id="wrongcvc" class="hide">Wrong format, numbers only</p>
+            </div>
+          </div>
+          <input type="submit" id="submit" value="Confirm" />
+        </form>
+      </div>
+
+      <div id="complete" class="hide card3">
+        <img src="./images/icon-complete.svg" alt="" />
+        <p>THANK YOU!</p>
+        <p>We've added your card details</p>
+        <button id="reset">Continue</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jonathan-Hart Peter</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
